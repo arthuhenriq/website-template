@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --light-red-color: #C40100;
+  --semi-dark-red: #880000;
+  --dark-red: #540000;
+  --light-orange: #F18400;
+  --semi-dark-orange: #D94F00;
+  --dark-orange: #C44600;
+  --dark-brown: #381101;
+}

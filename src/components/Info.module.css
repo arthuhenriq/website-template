@@ -1,0 +1,80 @@
+:root {
+    --light-red-color: #C40100;
+    --semi-dark-red: #880000;
+    --dark-red: #540000;
+    --light-orange: #F18400;
+    --semi-dark-orange: #D94F00;
+    --dark-orange: #C44600;
+    --dark-brown: #381101;
+}
+
+.box {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.contentBox {
+    margin-left: 4rem;
+}
+
+.infoBox {
+    display: flex;
+    position: relative;
+    align-items: center; 
+}
+
+.infoBox p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: semibold;
+    color: var(--dark-brown);
+}
+
+.infoBox button {
+    height: 1rem;
+    border: none;
+    background-color: var(--light-orange);
+    cursor: pointer;
+}
+
+.icon {
+    color: var(--dark-red);
+    border-radius: 50%;
+    background-color: var(--semi-dark-orange);
+}
+
+.icon:hover {
+    color: var(--semi-dark-red);
+    background-color: var(--light-orange);
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--dark-brown);
+}
+
+.image {
+    width: 420px;
+    height: 420px;
+    transform: scaleX(-1);
+    padding-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box div h1 {
+        font-size: 3rem;
+    }
+
+    .box div p {
+        font-size: 1.4rem;
+    }
+
+}

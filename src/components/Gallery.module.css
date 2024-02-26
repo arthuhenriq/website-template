@@ -1,0 +1,28 @@
+.carrousel {
+    overflow-x: hidden;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.image {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .image {
+        width: 8rem;
+        height: 8rem;
+        
+    }
+}
+

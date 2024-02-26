@@ -1,0 +1,101 @@
+:root {
+    --light-red-color: #C40100;
+    --semi-dark-red: #880000;
+    --dark-red: #540000;
+    --light-orange: #F18400;
+    --semi-dark-orange: #D94F00;
+    --dark-orange: #C44600;
+    --dark-brown: #381101;
+}
+
+.content {
+    padding-top: 6rem;
+    background: var(--light-orange);
+}
+
+.infoSection {
+    transform: translateX(-60px);
+    opacity: 0;
+    animation: animeLeft 2s forwards;
+    transition: transform 1s;
+    scroll-margin-top: 12rem;
+}
+
+.timelineSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    scroll-margin-top: 8rem;
+}
+
+.timeLineTitle {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    margin-left: 4rem;
+    font-weight: bold;
+    color: var(--dark-brown);
+}
+
+.timelineSectionAnimation {
+    opacity: 0;
+    animation: appearTimeline 2s forwards;
+    transform: scale(0);
+}
+
+.gallerySection {
+    display: flex;
+    flex-direction: column;
+    height: 24rem;
+    background: var(--dark-red);
+    scroll-margin-top: 8rem;
+}
+
+.gallerySection h1 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    margin-left: 4rem;
+    font-weight: bold;
+    color: var(--light-orange);
+}
+
+@keyframes animeLeft {
+    to {
+        transform: initial;
+        opacity: initial;
+    }
+}
+
+@keyframes appearTimeline {
+    to {
+        transform: initial;
+        opacity: initial;
+    }
+}
+
+.animatedSection {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+    .gallerySection {
+        font-size: 3rem;
+        justify-content: center;
+    }
+
+    .timelineSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        scroll-margin-top: 8rem;
+    }
+
+    .timeLineTitle {
+        font-size: 3rem;
+    }
+    
+}
